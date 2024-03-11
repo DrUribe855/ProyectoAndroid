@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resumen"
+    android:padding="20sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texto_bienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola"
+        android:textSize="20sp"></TextView>
+    <TextView
+        android:id="@+id/nombre_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        ></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/principalLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:onClick="newCuestionario"
+        android:backgroundTint="@color/inputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        ></Button>
+    <Button
+        android:onClick="logout"
+        android:backgroundTint="@color/inputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        ></Button>
+
+</FrameLayout>

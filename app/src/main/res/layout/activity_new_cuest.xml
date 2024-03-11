@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewCuest"
+    android:padding="20dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nuevo cuestionario"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="45dp"
+                android:gravity="center"
+                ></TextView>
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@mipmap/ic_questions_round"
+                android:layout_gravity="center"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Usuario"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:gravity="center"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/names"
+                android:text="Yeison Leandro Martinez Alzate"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Fecha inicio"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:gravity="center"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/fecha_inicio"
+                android:text="Fecha"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                ></TextView>
+
+            <Button
+                android:onClick="insertCuestionario"
+                android:text="Iniciar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:backgroundTint="@color/inputs"
+                android:layout_marginTop="45dp"
+                android:layout_gravity="center"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
